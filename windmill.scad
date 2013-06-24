@@ -1,4 +1,4 @@
-// template.scad
+// windmill.scad
 // OpenSCAD Template
 // 
 // Copyright (C) 2013 Christopher Roberts
