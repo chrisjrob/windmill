@@ -22,5 +22,5 @@ Instructions
   - [windmill\_tower.stl](https://github.com/chrisjrob/windmill/blob/master/windmill_tower.stl "Windmill Tower") : Just the tower
   - [windmill\_sails.stl](https://github.com/chrisjrob/windmill/blob/master/windmill_sails.stl "Windmill sails") : Just the sails
   - [windmill\_print.stl](https://github.com/chrisjrob/windmill/blob/master/windmill_print.stl "Windmill print") : Both tower and sails in one print
-  - windmill.stl : Demo only - not for printing
+  - [windmill.stl](https://github.com/chrisjrob/windmill/blob/master/windmill.stl "Windmill Demo - Not for Printing") : Demo only - not for printing
 * Slice and print
