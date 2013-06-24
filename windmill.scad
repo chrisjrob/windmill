@@ -19,9 +19,9 @@
 
 // Tower Parameters
 tower_height   = 15;
-tower_diameter = 6;
-top_diameter   = 5;
-roof_diameter  = 5.3;
+tower_diameter = 7;
+top_diameter   = 6;
+roof_diameter  = 6.3;
 hole_diameter  = 1.2;
 
 // Sail parameters
@@ -32,7 +32,7 @@ sail_frame     = 1.2;
 hub_diameter   = 3;
 hole_spindle   = 0.6;
 
-selection     = 3; // 1 = tower, 2 = sails, 3 = print both, 4 = demo
+selection     = 4; // 1 = tower, 2 = sails, 3 = print both, 4 = demo
 
 module tower() {
 
@@ -133,59 +133,4 @@ if (selection == 4) {
         }
     }
 }
-
-// -------------------------------------------------------------------------------------------
-// Commands
-// -------------------------------------------------------------------------------------------
-
-// http://en.wikibooks.org/wiki/OpenSCAD_User_Manual
-
-// primitives
-// cube(size = [1,2,3], center = true);
-// sphere( r = 10, $fn=100 );
-// circle( r = 10 );
-// cylinder( h = 10, r = 20, $fs = 6, center = true );
-// cylinder( h = 10, r1 = 10, r2 = 20, $fs = 6, center = false );
-// polyhedron(points = [ [x, y, z], ... ], triangles = [ [p1, p2, p3..], ... ], convexity = N);
-// polygon(points = [ [x, y], ... ], paths = [ [p1, p2, p3..], ... ], convexity = N);
-
-// transormations
-// scale(v = [x, y, z]) { ... }
-// rotate(a=[0,180,0]) { ... }
-// translate(v = [x, y, z]) { ... }
-// mirror([ 0, 1, 0 ]) { ... }
-
-// rounded box by combining a cube and single cylinder
-// $fn=50;
-// minkowski() {
-//   cube([10,10,1]);
-//   cylinder(r=2,h=1);
-// }
-
-// hull() {
-//   translate([15,10,0]) circle(10);
-//   circle(10);
-// }
-
-// linear_extrude(height=1, convexity = 1) import("tridentlogo.dxf");
-// deprecated - dxf_linear_extrude(file="tridentlogo.dxf", height = 1, center = false, convexity = 10);
-// deprecated - import_dxf(file="design.dxf", layer="layername", origin = [100,100], scale = 0.5);
-// linear_extrude(height = 10, center = true, convexity = 10, twist = 0, $fn = 100)
-// rotate_extrude(convexity = 10, $fn = 100)
-// import_stl("example012.stl", convexity = 5);
-
-// for (z = [-1, 1] ) { ... } // two iterations, z = -1, z = 1
-// for (z = [ 0 : 5 ] ) { ... } // range of interations step 1
-// for (z = [ 0 : 2 : 5 ] ) { ... } // range of interations step 2
-
-// for (i = [ [ 0, 0, 0 ], [...] ] ) { ... } // range of rotations or vectors
-// usage say rotate($i) or translate($i)
-// if ( x > y ) { ... } else { ... }
-// assign (angle = i*360/20, distance = i*10, r = i*2)
-
-// text http://www.thingiverse.com/thing:25036
-// inkscape / select all items
-// objects to path
-// select the object to export
-// extensions / generate from path / paths to openscad
 
