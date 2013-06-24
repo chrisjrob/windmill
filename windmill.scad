@@ -32,7 +32,7 @@ sail_frame     = 1.2;
 hub_diameter   = 3;
 hole_spindle   = 0.6;
 
-selection     = 3; // 1 = tower, 2 = sails, 3 = demo
+selection     = 3; // 1 = tower, 2 = sails, 3 = print both, 4 = demo
 
 module tower() {
 
@@ -122,6 +122,10 @@ if (selection == 2) {
     sails();
 }
 if (selection == 3) {
+    translate( v = [-tower_height/1.5, 0, 0] ) tower();
+    translate( v = [tower_height/1.5, 0, 0] )  sails();
+}
+if (selection == 4) {
     tower();
     translate( v = [0, -top_diameter/2 - 2.5, tower_height - hole_diameter] ) {
         rotate( a = [90, 45, 180] ) {
