@@ -1,7 +1,7 @@
 Windmill
 ========
 
-Copyright (C) Christopher Roberts
+Copyright (C) 2013 Christopher Roberts
 
 Licensed under the [GPL v3 Licence](https://github.com/chrisjrob/windmill/blob/master/LICENCE.md "Read licence")
 
